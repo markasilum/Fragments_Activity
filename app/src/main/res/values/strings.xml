@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fragments_Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Profile</string>
+    <string name="txtUsername">Username</string>
+    <string name="txtPassword">Password</string>
+    <string name="txtFullname">Fullname</string>
+    <string name="txtFirstname">Firstname</string>
+    <string name="txtLastname">Lastname</string>
+    <string name="txtHomeAddress">Home Address</string>
+    <string name="txtHouseNum">House #</string>
+    <string name="txtStreet">Street Name</string>
+    <string name="txtSubName">Subdivision / Housing Name</string>
+    <string name="txtCityName">City Name</string>
+    <string name="txtCountryName">Country Name</string>
+    <string name="txtNotesLabel">Notes</string>
+    <string name="txtComments">Comments / Notes</string>
+    <string name="txtBackButton">Back</string>
+    <string name="txtSaveButton">Save</string>
+</resources>
