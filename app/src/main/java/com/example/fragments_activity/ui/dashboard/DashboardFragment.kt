@@ -1,12 +1,19 @@
 package com.example.fragments_activity.ui.dashboard
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.fragments_activity.InputActivity
+import com.example.fragments_activity.Play
+import com.example.fragments_activity.QPIcalc
+import com.example.fragments_activity.R
 import com.example.fragments_activity.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
@@ -29,6 +36,37 @@ class DashboardFragment : Fragment() {
 
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val btnInput: Button
+        btnInput = root.findViewById(R.id.btInput)
+        btnInput.setOnClickListener{
+
+            val inputScreen: Intent
+            inputScreen = Intent(this.context, InputActivity::class.java)
+            startActivity(inputScreen)
+
+            Log.d("aaa","input button clicked")
+
+        }
+        val btnQpi: Button
+        btnQpi = root.findViewById(R.id.btQpiCalc)
+        btnQpi.setOnClickListener{
+
+            val qpiCalcScreen: Intent
+            qpiCalcScreen = Intent(this.context, QPIcalc::class.java)
+            startActivity(qpiCalcScreen)
+            Log.d("aaa","qpi button clicked")
+
+        }
+        val btnAct7: Button
+        btnAct7 = root.findViewById(R.id.btAct7)
+        btnAct7.setOnClickListener{
+            val act7Screen: Intent
+            act7Screen = Intent(this.context, Play::class.java)
+            startActivity(act7Screen)
+            Log.d("aaa","act 7 button clicked")
+
+        }
 
         return root
     }
