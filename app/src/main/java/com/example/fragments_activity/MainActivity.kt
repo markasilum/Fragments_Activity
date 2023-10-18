@@ -56,5 +56,14 @@ class MainActivity : AppCompatActivity() {
             Log.d("aaa","qpi button clicked")
 
         }
+        val btnAct7: Button
+        btnAct7 = findViewById(R.id.btAct7)
+        btnAct7.setOnClickListener{
+            val act7Screen: Intent
+            act7Screen = Intent(this,Play::class.java)
+            startActivity(act7Screen)
+            Log.d("aaa","act 7 button clicked")
+
+        }
     }
 }
