@@ -42,7 +42,7 @@ class DashboardFragment : Fragment() {
         btnInput.setOnClickListener{
 
             val inputScreen: Intent
-            inputScreen = Intent(this.context, InputActivity::class.java)
+            inputScreen = Intent(activity, InputActivity::class.java)
             startActivity(inputScreen)
 
             Log.d("aaa","input button clicked")
@@ -53,7 +53,7 @@ class DashboardFragment : Fragment() {
         btnQpi.setOnClickListener{
 
             val qpiCalcScreen: Intent
-            qpiCalcScreen = Intent(this.context, QPIcalc::class.java)
+            qpiCalcScreen = Intent(activity, QPIcalc::class.java)
             startActivity(qpiCalcScreen)
             Log.d("aaa","qpi button clicked")
 
@@ -62,7 +62,7 @@ class DashboardFragment : Fragment() {
         btnAct7 = root.findViewById(R.id.btAct7)
         btnAct7.setOnClickListener{
             val act7Screen: Intent
-            act7Screen = Intent(this.context, Play::class.java)
+            act7Screen = Intent(activity, Play::class.java)
             startActivity(act7Screen)
             Log.d("aaa","act 7 button clicked")
 
